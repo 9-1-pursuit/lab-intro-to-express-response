@@ -1,11 +1,11 @@
 const express = require("express");
 
 const app = express();
-const PORT = 3003;
+// const PORT = 3003;
 
 //routes
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.status(200).send("Hello World");
 });
 
 app.get("/terminator", (req, res) => {
@@ -83,6 +83,9 @@ app.get(`/magic8`, (req, res) => {
 });
 
 //listen
-app.listen(PORT, () => {
-  console.log(`listening on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`listening on port ${PORT}`);
+// });
+
+//export
+module.exports = app;
