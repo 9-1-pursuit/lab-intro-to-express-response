@@ -1,7 +1,4 @@
 const express = require("express");
-
-const PORT = process.env.PORT || 3003;
-
 const app = express();
 
 const missCleoResponses = [
@@ -93,8 +90,4 @@ app.get("/missCleoFortunes", (req, res) => {
   );
 });
 
-app.listen(3003, () => {
-  console.log(
-    "Listening on Port 3003 -- Please enjoy the Shakespeare Quote App"
-  );
-});
+module.exports = app;

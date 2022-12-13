@@ -115,8 +115,8 @@ Try to add it to your previous ROUTES
 
 ```js
 app.get("terminator", (req, res) => {
-  res.write("Ill be back");
-  res.end("Hasta la vista, baby");
+  res.send("Ill be back");
+  res.send("Hasta la vista, baby");
 });
 ```
 
