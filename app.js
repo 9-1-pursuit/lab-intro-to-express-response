@@ -28,15 +28,17 @@ const missCleoResponses = [
 
 app.get("/", (req, res) => {
   res.send(
-    "<h1 style='color: red'>WELCOME TO SHAKESPEARE QUOTE APP!<h1>\n <p>Choose a name from the list of plays by the 'Bard of Avon' to see a quote --> e.g., '/1' --> Hamlet 'To be or not to be, that is the question!'<p> \n <p>1. Hamlet<p>\n <p>2. Romeo & Juliet<p>\n <p>3. Othello<p>\n <p>4. King Lear<p>\n <p>5. Taming of the Shrew<p>\n <p>6. As You Like It<p>\n <p>7. Richard III<p> \n <p>8. Macbeth<p> \n <p>9. Midsummer Nights Dream<p> \n <p>10. Julius Caesar<p>\n<h1 style='color: red'>HAVE THY FOURTUNE TOLD!<h1>\n<p>navigate to '/missCleoFortunes' to see what your future holds, oooooh! (Think of your question before you enter Miss Cleo's inner sanctum... <h1 style='color: red'>ONLY<h1>$9.99 per question)<p>"
+    "<h1 style='color: red'>WELCOME TO SHAKESPEARES NUGGETS!<h1>\n <p>Choose a name from the list of plays by the 'Bard of Avon' to see a quote --> e.g., '/1' --> Hamlet 'To be or not to be, that is the question!'<p> \n <p>1. Hamlet<p>\n <p>2. Romeo & Juliet<p>\n <p>3. Othello<p>\n <p>4. King Lear<p>\n <p>5. Taming of the Shrew<p>\n <p>6. As You Like It<p>\n <p>7. Richard III<p> \n <p>8. Macbeth<p> \n <p>9. Midsummer Nights Dream<p> \n <p>10. Julius Caesar<p>\n<h1 style='color: red'>HAVE THY FOURTUNE TOLD BY MISS CLEO!<h1>\n<p>navigate to '/missCleoFortunes' to see what your future holds! (Think up a question before you enter Miss Cleo's inner sanctum, oooooh!. The spirits can be finicky and impatient-- so can Miss Cleo for that matter... anyway just have ur question ready bro! <h1 style='color: red'>ONLY<h1>($9.99 per question)<p>"
   );
 });
 
 app.get("/1", (req, res) => {
-  res.send(
+  res.write(
     "<h1 style='color: red'>Hamlet<h1>\n<p>'To be or not to be, that is the question!'<p>"
   );
+  res.write("<p>'Hey nonny nonny'<p>");
 });
+
 app.get("/2", (req, res) => {
   res.send(
     "<h1 style='color: red'>Romeo & Juliet<h1>\n<p>'Romeo,Romeo! Wherefore art thou Romeo?'<p>"
