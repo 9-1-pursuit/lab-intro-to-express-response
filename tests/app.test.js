@@ -6,6 +6,7 @@ const request = require("supertest");
 //   expect(1).toBe(1)
 // })
 
+// this test passes
 describe("Test the root path", () => {
   test("It should response the GET method", () => {
     return request(app)
@@ -16,6 +17,7 @@ describe("Test the root path", () => {
   });
 });
 
+//this test fails
 describe("Test the root path", () => {
   test("It should response the GET method", () => {
     return request(app)
