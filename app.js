@@ -85,7 +85,7 @@ app.get("/10", (req, res) => {
 
 app.get("/missCleoFortunes", (req, res) => {
   res.send(
-    `<h1 style='color: red'>WELCOME TO MISS CLEO'S INNER SANCTUM<h1>\n<p>My dear chil' I tell ya da trut', I tell ya evrythin' I consult my crystal ball and me answer is... ${
+    `<h1 style='color: red'>WELCOME TO MISS CLEO'S INNER SANCTUM<h1>\n<p>My dear chil' I tell ya da trut', I tell ya evrythin' I consult mah crystal ball and mah answer is... ${
       missCleoResponses[Math.floor(Math.random() * missCleoResponses.length)]
     } <p>`
   );
