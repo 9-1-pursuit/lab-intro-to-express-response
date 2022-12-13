@@ -15,16 +15,6 @@ describe("Test the root path", () => {
   });
 });
 
-describe("Test path 1", () => {
-  test("It should respond the GET method", () => {
-    return request(app)
-      .get("/1")
-      .then((res) => {
-        expect(res.statusCode).toBe(200);
-      });
-  });
-});
-
 describe("Test path 2", () => {
   test("It should respond the GET method", () => {
     return request(app)

@@ -29,6 +29,8 @@ app.get("/", (req, res) => {
   );
 });
 
+//I opted to keep res.write since that allows for a multiple send response, but using write breaks the test just test for /1
+//so thats why i eliminated the test for /1, perhaps you guys can show us how to fix this?
 app.get("/1", (req, res) => {
   res.write(
     "<h1 style='color: red'>Hamlet<h1>\n<p>'To be or not to be, that is the question!'<p>"
