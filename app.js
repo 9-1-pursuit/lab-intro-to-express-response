@@ -29,46 +29,47 @@ const magic8Responses = [
 ];
 
 // Routes
+
 app.get("/", (req, res) => {
   res.status(200).send("Hello, world!");
 });
 
 // Catchphrases
 app.get("/ace-ventura", (req, res) => {
-  res.send("Alrighty then!");
+  res.status(200).send("Alrighty then!");
 });
 app.get("/buzz-lightyear", (req, res) => {
-  res.send("To infinity, and beyond!");
+  res.status(200).send("To infinity, and beyond!");
 });
 app.get("/dorothy", (req, res) => {
-  res.send("Toto, I've got a feeling we're not in Kansas anymore");
+  res.status(200).send("Toto, I've got a feeling we're not in Kansas anymore");
 });
 app.get("/gollum", (req, res) => {
-  res.send("My precious");
+  res.status(200).send("My precious");
 });
 app.get("/homer-simpson", (req, res) => {
-  res.send("D'Oh");
+  res.status(200).send("D'Oh");
 });
 app.get("/james-bond", (req, res) => {
-  res.send("The name is Bond, James Bond");
+  res.status(200).send("The name is Bond, James Bond");
 });
 app.get("/joker", (req, res) => {
-  res.send("Why so serious?");
+  res.status(200).send("Why so serious?");
 });
 app.get("/terminator", (req, res) => {
-  res.send("I'll be back");
+  res.status(200).send("I'll be back");
 });
 app.get("/tim-gunn", (req, res) => {
-  res.send("Make it work");
+  res.status(200).send("Make it work");
 });
 app.get("/tony-montana", (req, res) => {
-  res.send("Say hello to my little friend");
+  res.status(200).send("Say hello to my little friend");
 });
 
 // Magic 8 Ball
 app.get("/magic8", (req, res) => {
   const randomIndex = Math.floor(Math.random() * 19);
-  res.send(
+  res.status(200).send(
     `<h1 style="background-color: black; color: white; height: 100%; display: flex; justify-content: center; align-items: center">${magic8Responses[randomIndex]}</h1>`
   );
 });
