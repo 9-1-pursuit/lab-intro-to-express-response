@@ -9,7 +9,7 @@ const {punchlines, homePage, reference, objLoop, magic8Responses} = require("./d
 
 //  create route for landing page
 app.get("/", (req, resp) => {
-    resp.send(homePage)
+    resp.status(418).send(homePage)
 })
 // ACTIVITY MAGIC 8 BALL
 // need to put BEFORE :value endpoint otherwise will think magic8 is param
