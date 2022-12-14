@@ -36,7 +36,6 @@ function objLoop(variable, obj, input){
     return variable
 }
 
-
 const magic8Responses = [
     "It is certain",
     "It is decidedly so",

@@ -41,11 +41,7 @@ app.get("/:value", (req,resp) => {
     `)
 }) 
 
-
-
-
-
-// EXPORT
+// EXPORT for server.js/tests
 module.exports = app
 
 
