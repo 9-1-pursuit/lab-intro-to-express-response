@@ -1,3 +1,15 @@
+ - for file in routes folder (if using nested routes, file name would be path ex /person/:id) -> in route folder (person.js and paths would ("/" = /person and "/:id" =/person/id)
+    -top of file:
+        -const express = require("express")
+        let router = express.Router()
+    -bottom of file:
+        -module.exports = router
+    - app.js:
+        - use person.js to handle /person endpoints in routes -> endpoint  === Router object :
+            -const endpoint = require("./routes/person")
+        -link route to particular path using .use() method: 
+            -app.use("/person", endpoint) 
+ 
  - if need to use different CRUD methods on same path use .route() to chain :
         router.route("/:value")
         .get((req,resp) => {

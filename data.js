@@ -1,6 +1,6 @@
 const punchlines = {
     Fraiser : "I'm listening",
-    Stan : "Oh, my God! They killed Kenny!",
+    StanMarsh : "Oh, my God! They killed Kenny!",
     DaenerysTargaryen: "Dracarys", 
     BoJackHorseman : "Clean up your stuff Todd",
     Regis: "Is that your final answer?",
@@ -12,7 +12,7 @@ const punchlines = {
 
 const reference = {
     Fraiser : "Fraiser",
-    Stan : "South Park",
+    StanMarsh : "South Park",
     DaenerysTargaryen: "Game of Thrones", 
     BoJackHorseman : "BoJack Horseman",
     Regis: "Who Wants To Be A Millionaire?",
@@ -22,7 +22,12 @@ const reference = {
     Goofy: "A Goofy Movie"
 }
 
+const homePage = `
+<h1>Home Page</h1>
+<p>Possible endpoints : Fraiser, Stan Marsh, Daenerys Targaryen, Bojack Horseman, Regis, Tony Montana, Gollum, Hannibal, Goofy </p>`
+
 module.exports = {
     punchlines,
     reference,
+    homePage
 }
