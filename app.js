@@ -9,7 +9,7 @@ const movies = require("./movies.json");
 const quotes = require("./catchPhrases.json");
 
 app.get("/", (req, res) => {
-  res.send("<h2>Movies App running...</h2>");
+  res.send("<h2>App running...</h2>");
 });
 
 app.get("/movies", (req, res) => {
