@@ -2,8 +2,8 @@
 const express = require("express")
 // set up express app
 const app = express()
-// set up listener for app 
-app.listen(3003)
+// // set up listener for app <- moved to server.js
+// app.listen(3003)
 // get data from data.js file
 const {punchlines, homePage, reference, objLoop, magic8Responses} = require("./data.js")
 
