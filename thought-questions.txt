@@ -1,0 +1,15 @@
+What characters are allowed in a URL?
+    reserved characters : ?, /, #, :
+   special characters :  - . _ ~ %
+   
+What happens if you try to create a URL /tim gunn
+    tim%20gunn
+
+Is there a difference between /timgunn and /TimGunn and /tim/gunn?
+    yes all different paths unless coded for (/timgunn and /TimGunn) <- to format param
+    but tim/gunn is diff path completely from /timgunn
+
+If you have a phrase like Here's looking at you, kid, how do you deal with the ' in Here's?
+    'Here\s looking...'
+
+- CANNOT HAVE  more than one resp.send() -> only ONE RESPONSE PER REQUEST 
