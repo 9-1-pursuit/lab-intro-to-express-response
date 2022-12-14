@@ -1,30 +1,45 @@
 const punchlines = {
-    Fraiser : "I'm listening",
-    StanMarsh : "Oh, my God! They killed Kenny!",
-    DaenerysTargaryen: "Dracarys", 
-    BoJackHorseman : "Clean up your stuff Todd",
-    Regis: "Is that your final answer?",
-    TonyMontana: "Say hello to my little friend",
-    Gollum: "My precious",
-    Hannibal: "Hello Clarice",
-    Goofy: "Hyuck"
-}
-
-const reference = {
-    Fraiser : "Fraiser",
-    StanMarsh : "South Park",
-    DaenerysTargaryen: "Game of Thrones", 
-    BoJackHorseman : "BoJack Horseman",
-    Regis: "Who Wants To Be A Millionaire?",
-    TonyMontana: "Scarface",
-    Gollum: "Lord of the Rings",
-    Hannibal: "Silence of the Lambs",
-    Goofy: "A Goofy Movie"
+    Fraiser : {
+        phrase: "I'm Listening",
+        reference: "Fraiser"
+    }, 
+    StanMarsh : {
+        phrase: "Oh, my God! They killed Kenny!",
+        reference: "South Park"
+    },
+    DaenerysTargaryen: {
+        phrase: "Dracarys", 
+        reference: "Game of Thrones"
+    }, 
+    BoJackHorseman : {
+        phrase: "Clean up your s#!% Todd",
+        reference: "BoJack Horseman"
+    }, 
+    Navi:  {
+        phrase: "Hey, Listen!",
+        reference: "Zelda"
+    },
+    TonyMontana:  {
+        phrase: "Say hello to my little friend",
+        reference: "Scarface"
+    },
+    Gollum:  {
+        phrase: "My precious",
+        reference: "Lord of the Rings"
+    }, 
+    Hannibal:  {
+        phrase: "Hello Clarice",
+        reference: "Silence of the Lambs"
+    },
+    Goofy:  {
+        phrase: "Hyuck",
+        reference: "A Goofy Movie"
+    },
 }
 
 const homePage = `
 <h1>Home Page</h1>
-<p>Possible endpoints : Fraiser, Stan Marsh, Daenerys Targaryen, Bojack Horseman, Regis, Tony Montana, Gollum, Hannibal, Goofy, magic8 </p>`
+<p>Possible endpoints : Fraiser, Stan Marsh, Daenerys Targaryen, Bojack Horseman, Navi, Tony Montana, Gollum, Hannibal, Goofy, magic8 </p>`
 
 // function for looping into data objects
 function objLoop(variable, obj, input){
@@ -35,7 +50,6 @@ function objLoop(variable, obj, input){
     }
     return variable
 }
-
 
 const magic8Responses = [
     "It is certain",
@@ -57,12 +71,10 @@ const magic8Responses = [
     "My sources say no",
     "Outlook not so good",
     "Very doubtful"
-  
   ]
 
 module.exports = {
     punchlines,
-    reference,
     homePage,
     objLoop,
     magic8Responses
