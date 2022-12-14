@@ -1,7 +1,11 @@
+// Dependencies
 const express = require("express");
 
+// Configuration
 const app = express();
-const PORT = 3003;
+// const PORT = 3003;
+
+// Variable
 const magic8Responses = [
   "It is certain",
   "It is decidedly so",
@@ -24,11 +28,12 @@ const magic8Responses = [
   "Very doubtful",
 ];
 
+// Routes
 app.get("/", (req, res) => {
-  res.send("Hello, world!");
+  res.status(200).send("Hello, world!");
 });
 
-// Catchphrases routes
+// Catchphrases
 app.get("/ace-ventura", (req, res) => {
   res.send("Alrighty then!");
 });
@@ -61,7 +66,6 @@ app.get("/tony-montana", (req, res) => {
 });
 
 // Magic 8 Ball
-
 app.get("/magic8", (req, res) => {
   const randomIndex = Math.floor(Math.random() * 19);
   res.send(
@@ -69,6 +73,10 @@ app.get("/magic8", (req, res) => {
   );
 });
 
-app.listen(PORT, () => {
-  console.log(`waiting for a request on port ${PORT}`);
-});
+//Listen
+// app.listen(PORT, () => {
+//   console.log(`waiting for a request on port ${PORT}`);
+// });
+
+// Export
+module.exports = app
