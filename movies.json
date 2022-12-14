@@ -3,13 +3,24 @@
         "movieName": "Terminator",
         "movieId": "how836iev",
         "releaseYear": "1984",
-        "quote": "I'll be back."
+        "quote": "Terminator: I'll be back."
     }, 
     {
         "movieName": "Enter the Dragon",
         "movieId": "haf838jjd",
         "releaseYear": "1973",
-        "quote": "When The Opponent Expands, I Contract. When He Contracts, I Expand. And When There Is An Opportunity, I Do Not Hit. It Hits All By Itself."
+        "quote": "Lee: When The Opponent Expands, I Contract. When He Contracts, I Expand. And When There Is An Opportunity, I Do Not Hit. It Hits All By Itself."
+    },
+    {
+        "movieName": "Lord of the Rings: The Fellowship of the Ring",
+        "movieId": "bry893hhj",
+        "releaseYear": "2001",
+        "quote": "Gollum: They cursed us. Murderer they called us. They cursed us, and drove us away. And we wept, Precious, we wept to be so alone"
+    },
+    {
+        "movieName": "Star Wars: Episode III - Revenge of the Sith",
+        "movieId": "qqb930nnz",
+        "releaseYear": "2005",
+        "quote": "Obi-Wan: You were the Chosen One! It was said that you would destroy the Sith, not join them! Bring balance to the Force, not leave it in darkness! "
     }
 ]
-  

@@ -8,25 +8,21 @@ const PORT = process.argv.PORT || 3003;
 const movies = require("./movies.json");
 
 app.get("/", (req, res) => {
-  res.send("<h2>App running...</h2>");
+  res.send("<h2>Movies App running...</h2>");
 });
 
 app.get("/movies", (req, res) => {
   res.send(movies);
 });
 
-app.get("/movies/terminatorjson", (req, res) => {
-  res.send();
+app.get("/movies/:id", (req, res) => {
+  const { id } = req.params;
+  res.send(movies.find((movie) => movie.movieId === id));
 });
 
-app.get("/tim-gunn", (req, res) => {
-  res.send("Make it work");
-});
-
-app.get("/emeril", (req, res) => {
-  res.send("Bam!");
-});
-
-app.listen(PORT, () => {
+app.listen(PORT, (err) => {
+  if (err) {
+    console.log(err);
+  }
   console.log(`Server listening for requests on port ${PORT}`);
 });
