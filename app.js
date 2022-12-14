@@ -44,3 +44,5 @@ app.listen(PORT, (err) => {
   }
   console.log(`Server listening for requests on port ${PORT}`);
 });
+
+module.exports == app;
