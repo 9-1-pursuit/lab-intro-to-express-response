@@ -26,11 +26,17 @@ app.param("value", (req, resp, next, value) => {
 
 app.get("/:value", (req,resp) => {
     // req.punchline/ req.reference is available here from 'middleware' .params function
+    req.punchline ? 
     resp.send(`
-    ${req.punchline ? `<h2>${req.punchline.phrase} - (${req.punchline.reference})</h2>` : "<h2>Error, Page Not Found</h2>"}
+    <h2>${req.punchline.phrase} - (${req.punchline.reference})</h2>
     <br>
-    <a href="http://localhost:3003/">Home</a>
-    `)
+    <a href="http://localhost:3003/">Home</a>`) : 
+    resp.status(404).send(`
+    <div style="text-align: center; margin: 10%">
+        <img src = "https://www.webdevelopmentgroup.com/wp-content/uploads/2019/08/lionel-richie-640x370-c-center.png" alt = 'Error 404'/>
+        <br>
+        <a href="http://localhost:3003/">Home</a>
+    </div> `)
 }) 
 
 // EXPORT for server.js/tests
