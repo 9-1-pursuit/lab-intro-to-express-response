@@ -101,6 +101,10 @@
     },
     { 
         "quotee": "terminator", 
-        "quote": "I'll be back!"
+        "quote": "I'll be back"
+    },
+    { 
+        "quotee": "terminator2", 
+        "quote": "Hasta la visa baby"
     }
 ]
