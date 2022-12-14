@@ -9,7 +9,7 @@ const {punchlines, homePage, objLoop, magic8Responses} = require("./data.js")
 
 //  create route for landing page
 app.get("/", (req, resp) => {
-    resp.status(418).send(homePage)
+    resp.status(418).send(`<div style = "text-align:center">${homePage}</div>`)
 })
 
 // .params -> (middleware runs b4 the .get, or .put etc) to look into data objects and set key value to be used in app.get resp.send
