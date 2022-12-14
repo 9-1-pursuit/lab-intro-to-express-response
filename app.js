@@ -35,7 +35,7 @@ app.param("value", (req, resp, next, value) => {
 app.get("/:value", (req,resp) => {
     // req.punchline/ req.reference is available here from 'middleware' .params function
     resp.send(`
-    ${req.punchline ? `<h2>${req.punchline} - (${req.reference})</h2>` : "Error, Page Not Found"}
+    ${req.punchline ? `<h2>${req.punchline} - (${req.reference})</h2>` : "<h2>Error, Page Not Found</h2>"}
     <br>
     <a href="http://localhost:3003/">Home</a>
     `)
