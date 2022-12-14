@@ -3,7 +3,7 @@ What characters are allowed in a URL?
    special characters :  - . _ ~ %
    
 What happens if you try to create a URL /tim gunn
-    tim%gunn
+    tim%20gunn
 
 Is there a difference between /timgunn and /TimGunn and /tim/gunn?
     yes all different paths

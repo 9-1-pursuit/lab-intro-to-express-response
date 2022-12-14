@@ -45,7 +45,8 @@ app.get("/:value", (req,resp) => {
 
 
 
-
+// EXPORT
+module.exports = app
 
 
 
