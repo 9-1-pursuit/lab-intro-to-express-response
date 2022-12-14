@@ -38,8 +38,10 @@ const punchlines = {
 }
 
 const homePage = `
+<div style = "text-align:center">
 <h1>Home Page</h1>
-<p>Possible endpoints : <li>Fraiser</li> <li>Stan Marsh</li> <li>Daenerys Targaryen</li> <li>Bojack Horseman</li> <li>Navi</li> <li>Tony Montana</li><li>Gollum</li> <li>Hannibal</li> <li>Goofy</li> <li>magic8</li> </p>`
+<p>Possible endpoints : <li>Fraiser</li> <li>Stan Marsh</li> <li>Daenerys Targaryen</li> <li>Bojack Horseman</li> <li>Navi</li> <li>Tony Montana</li><li>Gollum</li> <li>Hannibal</li> <li>Goofy</li> <li>magic8</li> </p>
+</div>`
 
 // function for looping into data objects
 function objLoop(variable, obj, input){
