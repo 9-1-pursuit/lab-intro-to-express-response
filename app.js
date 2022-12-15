@@ -36,6 +36,7 @@ app.get("/1", (req, res) => {
     "<h1 style='color: red'>Hamlet<h1>\n<p>'To be or not to be, that is the question!'<p>"
   );
   res.write("<p>'Hey nonny nonny'<p>");
+  )
 });
 
 app.get("/2", (req, res) => {
