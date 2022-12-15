@@ -66,3 +66,6 @@ app.get("/magic8", (req, res) => {
 app.listen(PORT, ()=> {
     console.log(`listening on port ${PORT}`)
 })
+
+//Export
+module.exports = app
