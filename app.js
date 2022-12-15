@@ -37,6 +37,7 @@ app.get("tim-gun", (req, res) => {
 // If you have a phrase like Here's looking at you, kid, how do you deal with the ' in Here's?
 // Answer === There is two ways use single quotes inside double quotes or Here/s
 
+//ROUTES
 app.get("/Emeril", (req, res) => {
   res.send("Bam!!!")
 })
