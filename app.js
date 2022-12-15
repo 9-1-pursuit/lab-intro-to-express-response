@@ -109,4 +109,8 @@ let magic8Answer =
 app.get("/magic8", (req, res) => {
   res.send(`<h1>${magic8Answer}</h1>`)
 })
+
+// BONUS
+// Create your own Tests
+
 module.exports = app
